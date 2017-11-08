@@ -1,2 +1,17 @@
 #!/bin/bash
 # Common Network Tools
+
+# Etherwake - Wake-on-LAN
+# Hping3
+# IFtop - network interface monitor
+# Nethog - network traffic monitor
+# Nmap - multipurpose network scanner
+# Trace Roue - network tracing
+# Wake On LAN - Wake-on-LAN
+
+# List
+
+list = "etherwake hping3 iftop nethog nmap traceroute wakeonlan "
+
+# Install
+sudo apt-get install $list -y
