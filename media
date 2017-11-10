@@ -1,0 +1,5 @@
+#!/bin/bash
+# Common Media Tools
+
+list = " "
+sudo apt-get install $list
