@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Fetching repository update"
+sudo apt-get update
+echo "Distro Update"
+sudo apt-get dist-update -y
+echo "Software Update"
