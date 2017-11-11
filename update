@@ -2,5 +2,13 @@
 echo "Fetching repository update"
 sudo apt-get update
 echo "Distro Update"
-sudo apt-get dist-update -y
+sudo apt-get dist-upgrade -y
 echo "Software Update"
+sudo apt-get upgrade -y
+echo "Starting Auto Remove"
+sudo apt-get autoremove -y
+echo "Starting... Auto Clean"
+sudo apt-get autoclean
+echo "Starting... Configuration"
+sudo dpkg --configure -a
+echo "Done..."
