@@ -5,7 +5,9 @@ echo "Distro Update"
 sudo apt-get dist-upgrade -y
 echo "Software Update"
 sudo apt-get upgrade -y
-echo "Starting Auto Remove"
+echo "Starting... force install"
+sudo apt-get install -f
+echo "Starting... Auto Remove"
 sudo apt-get autoremove -y
 echo "Starting... Auto Clean"
 sudo apt-get autoclean
