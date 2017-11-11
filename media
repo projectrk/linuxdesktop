@@ -1,5 +1,5 @@
 #!/bin/bash
 # Common Media Tools
 
-list = " "
+list = "vlc"
 sudo apt-get install $list
