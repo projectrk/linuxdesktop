@@ -1,16 +1,38 @@
 #!/bin/bash
-echo "Fetching repository update"
+clear
+echo "=================================="
+echo "!!! STARTING REPOSITORY UPDATE !!!"
+echo "=================================="
 sudo apt-get update
-echo "Distro Update"
+echo
+echo "==============================="
+echo "!!! STARTING DISTRO UPGRADE !!!"
+echo "==============================="
 sudo apt-get dist-upgrade -y
-echo "Software Update"
+echo
+echo "================================="
+echo "!!! STARTING SOFTWARE UPGRADE !!!"
+echo "================================="
 sudo apt-get upgrade -y
-echo "Starting... force install"
-sudo apt-get install -f
-echo "Starting... Auto Remove"
+echo
+echo "=============================="
+echo "!!! STARTING FORCE INSTALL !!!"
+echo "=============================="
+sudo apt-get -f install
+echo
+echo "============================"
+echo "!!! STARTING AUTO REMOVE !!!"
+echo "============================"
 sudo apt-get autoremove -y
-echo "Starting... Auto Clean"
-sudo apt-get autoclean
-echo "Starting... Configuration"
+echo
+echo "==========================="
+echo "!!! STARTING AUTO CLEAN !!!"
+echo "==========================="
+sudo apt-get autoclean -y
+echo
+echo "===================================="
+echo "!!! STARTING PACKAGE RECONFIGURE !!!"
+echo "===================================="
 sudo dpkg --configure -a
-echo "Done..."
+echo
+date
